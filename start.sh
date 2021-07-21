@@ -7,7 +7,7 @@ sleep 20 &
 
 
 wait 
-docker exec  mongo_cr mongoexport --collection=users --sort "{firstname:1}"  --db=cr-db --out=users.json 
+docker exec  mongo_cr mongoexport --collection=users --sort "{firstname:1}"  --db=cr_db --out=users.json 
 
 sleep 10 &
 
